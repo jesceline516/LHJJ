@@ -1,49 +1,113 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karya Bebekku</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #50b3a2;
-            color: White;
-            text-align: center;
-            padding: 1 rem 0;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20 px;
-        }
-        .gallery img {
-            margin: 10 px;
-            border-radius: 5 px;
-            width: 300 px;
-            height: auto;
-            box-shadow: 0 0 10 px rgba (0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Karya Bebekku</h1>
-        <p>Galeri bebek yang ceria dan penuh warna.</p>
-        <p>Temui ilustasi bebek yang kamu inginkan disini</p>
-    </header>
-    <section class="gallery">
-        <!-- Tambahkan gambar karya di sini -->
-        <img src="64b02a818e5ba5704c4f0fd50a792744.jpg" alt="Bebek Ceria 1">
-        <img src="27f66a6929e34ed5ebb0a05da92e6167.jpg" alt="Bebek Ceria 2">
-        <img src="e3d7a2384a602a3d90f9566bc6dedf28.jpg" alt="Bebek Ceria 3">
-        <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
-    </section>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li> <a href="">Menu</a> </li>
+        <li> <a href="">Site Map</a> </li>
+        <li> <a href="">About</a> </li>
+        <li> <a href="">Contact</a> </li>
+      </ul>
+      <div class="header-welcome">
+        <h1>Selamat Datang</h1>
+        <p>Hai ini halaman portfolio sederhana yang telah saya buat</p>
+        <br><br>
+        <a href="#bio-singkat">More</a>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="content">
+      <div id="bio-singkat">
+        <div>
+          <h3>Jesceline Jenesia</h3>
+          <hr>
+          <p> Jangan menyerah, pekerjaan impianmu sedang menunggumu di luar sana.</p>
+          <!-- <p>Saya lahir di-Medan dan menempuh jenjang pendidikan sekolah di Brigjend Katamso.</p> -->
+        </div>
+      </div>
+      <div id="galeri">
+        <div>
+          <h1>perkenalan diriku</h1>
+          <hr>
+          <div>
+            <div class="card">
+              <img src="WhatsApp Image 2025-04-22 at 21.56.01" alt=""/>
+              <div class="card-info">
+                <h4>Gambar-1</h4>
+                <p> Ini aku.  </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="WhatsApp Image 2025-04-22 at 21.57.11" alt=""/>
+              <div class="card-info">
+                <h4>Gambar-2</h4>
+                <p> Ini karya ku.  </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="WhatsApp Image 2025-04-22 at 21.58.07" alt=""/>
+              <div class="card-info">
+                <h4>Gambar-3</h4>
+                <p> Ini bias ku.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="motivate">
+        <h1>Kerja keras tidak akan mengecewakanmu</h1>
+        <div id="overlay"></div>
+      </div>
+      <div id="footer">
+        <div class="footer-item">
+          <div>
+            <h2>About Me</h2>
+            <p>Aku seorang anak yang tidak memiliki ambisi dan hanya melakukan hal yang ku sukai saja, dan aku seorang anak yang tidak pernah belajar atau mengerti tantang coding </p>
+          </div>
+        </div>
+        <div class="footer-item sosial">
+          <h2>Social Media</h2>
+          <div class="sosmed">
+            <a href="">
+              <div class="sosmed">
+                <img src="" alt="">
+                <h5>Facebook</h5>
+              </div>
+            </a>
+          </div>
+          <div class="sosmed">
+            <a href="">
+              <img src="" alt="">
+              <h5>WhatsApp</h5>
+            </a>
+          </div>
+          <div class="sosmed">
+            <a href="">
+              <img src="" alt="">
+              <h5>Telegram</h5>
+            </a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <h2>Contact</h2>
+          <div class="sosmed">
+            <h5>Alamat : Medan helvetia</h5>
+          </div>
+          <div class="sosmed">
+            <h5>Nomor Hp : 08193378887</h5>
+          </div>
+          <div class="sosmed">
+            <h5>E-Mail : kiwata72@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
