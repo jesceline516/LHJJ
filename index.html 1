@@ -1,74 +1,235 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Portofolio Jesceline Jenesia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Jesceline Jenesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(135deg, #e0f2f1, #ffffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #43a047, #66bb6a);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #dcedc8;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #2e7d32;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #2e7d32;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+      animation: slideUp 0.8s ease both;
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .card p, .card li, .card table {
+      line-height: 1.6;
+    }
+
+    ul.timeline {
+      list-style: none;
+      padding-left: 20px;
+      border-left: 4px solid #81c784;
+    }
+
+    ul.timeline li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    ul.timeline li::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #388e3c;
+      border-radius: 50%;
+      left: -10px;
+      top: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .sosmed-icons a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+      color: #2e7d32;
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .sosmed-icons a:hover {
+      transform: translateX(5px);
+      color: #1b5e20;
+    }
+
+    footer {
+      background: #a5d6a7;
+      text-align: center;
+      padding: 20px;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from {opacity: 0;} to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Jesceline</div>
-            <ul class="nav-links">
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#pendidikan">Pendidikan</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-        </nav>
-        <div class="hero-text">
-            <h1>Jesceline Jenesia</h1>
-            <p>Calon Animator Ternama</p>
-            <a class="btn" href="#tentang">Yuk Kenalan!</a>
-        </div>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h1>Jesceline Jenesia</h1>
+      <p>Calon Animator Ternama</p>
+      <a href="#tentang" class="btn">Yuk Kenalan!</a>
+    </div>
+  </header>
 
-    <main class="container">
-        <section id="tentang" class="card">
-            <h2>Tentang Saya</h2>
-            <p><strong>Jesceline Jenesia</strong> adalah mahasiswa DKV di <em>Universitas Prima Indonesia</em> dengan mimpi besar menjadi seorang <strong>komikus</strong> dan <strong>animator profesional</strong>. Sejak kecil, dunia komik dan anime telah menjadi bagian dari hidup saya. Sekarang, saya terus belajar, mencipta, dan berkembang dalam dunia desain dan animasi.</p>
-        </section>
+  <main>
+    <section id="tentang" class="card">
+      <h2>Tentang Saya</h2>
+      <p><strong>Jesceline Jenesia</strong> adalah mahasiswa DKV di <em>Universitas Prima Indonesia</em> dengan mimpi besar menjadi seorang <strong>komikus</strong> dan <strong>animator profesional</strong>. Sejak kecil, dunia komik dan anime telah menjadi bagian dari hidup saya. Sekarang, saya terus belajar, mencipta, dan berkembang dalam dunia desain dan animasi.</p>
+    </section>
 
-        <section id="pendidikan" class="card">
-            <h2>Riwayat Pendidikan</h2>
-            <ul class="timeline">
-                <li><strong>SD Brigjend Katamso 1 Medan</strong><br><span>2012 – 2018</span></li>
-                <li><strong>SMP Brigjend Katamso 1 Medan</strong><br><span>2018 – 2021</span></li>
-                <li><strong>SMA Brigjend Katamso 1 Medan (IPA)</strong><br><span>2021 – 2024</span></li>
-                <li><strong>Universitas Prima Indonesia (DKV)</strong><br><span>2024 – Sekarang</span></li>
-            </ul>
-        </section>
+    <section id="pendidikan" class="card">
+      <h2>Riwayat Pendidikan</h2>
+      <ul class="timeline">
+        <li><strong>SD Brigjend Katamso 1 Medan</strong> (2012–2018)</li>
+        <li><strong>SMP Brigjend Katamso 1 Medan</strong> (2018–2021)</li>
+        <li><strong>SMA Brigjend Katamso 1 Medan</strong> (2021–2024)</li>
+        <li><strong>Universitas Prima Indonesia</strong> (2024–Sekarang)</li>
+      </ul>
+    </section>
 
-        <section class="card">
-            <h2>Informasi Pribadi</h2>
-            <table>
-                <tr><th>Nama</th><td>Jesceline Jenesia</td></tr>
-                <tr><th>Tempat, Tanggal Lahir</th><td>Medan, 5 Januari 2006</td></tr>
-                <tr><th>Usia</th><td>19 Tahun</td></tr>
-                <tr><th>Alamat</th><td>Medan Helvetia</td></tr>
-                <tr><th>Jenis Kelamin</th><td>Perempuan</td></tr>
-                <tr><th>Kewarganegaraan</th><td>Indonesia</td></tr>
-                <tr><th>Pendidikan Terakhir</th><td>SMA IPA</td></tr>
-                <tr><th>Nomor Telepon</th><td>0819-3378-8887</td></tr>
-            </table>
-        </section>
+    <section class="card">
+      <h2>Informasi Pribadi</h2>
+      <table>
+        <tr><th>Nama</th><td>Jesceline Jenesia</td></tr>
+        <tr><th>Tempat, Tanggal Lahir</th><td>Medan, 5 Januari 2006</td></tr>
+        <tr><th>Usia</th><td>19 Tahun</td></tr>
+        <tr><th>Alamat</th><td>Medan Helvetia</td></tr>
+        <tr><th>Jenis Kelamin</th><td>Perempuan</td></tr>
+        <tr><th>Kewarganegaraan</th><td>Indonesia</td></tr>
+        <tr><th>Pendidikan Terakhir</th><td>SMA IPA</td></tr>
+        <tr><th>Nomor Telepon</th><td>0819-3378-8887</td></tr>
+      </table>
+    </section>
 
-        <section id="kontak" class="card">
-            <h2>Kontak & Sosial Media</h2>
-            <div class="sosmed-icons">
-                <a href="https://www.instagram.com/jkive_jj/" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
-                <a href="mailto:celinenesion@gmail.com"><ion-icon name="mail-outline"></ion-icon> Email</a>
-                <a href="https://wa.me/6281933788887"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
-            </div>
-        </section>
-    </main>
+    <section id="kontak" class="card">
+      <h2>Kontak & Sosial Media</h2>
+      <div class="sosmed-icons">
+        <a href="https://www.instagram.com/jkive_jj/" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+        <a href="mailto:celinenesion@gmail.com"><ion-icon name="mail-outline"></ion-icon> Email</a>
+        <a href="https://wa.me/6281933788887"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Jesceline Jenesia. All rights reserved.</p>
-    </footer>
+  <footer>
+    &copy; 2025 Jesceline Jenesia. All rights reserved.
+  </footer>
 
 </body>
 </html>
